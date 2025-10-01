@@ -29,6 +29,7 @@
 }
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -368,14 +369,14 @@
 
 /* Rodapé */
 .rodape {
-    height: 45px;
     display: flex;
+    height: 45px;
 }
 
 .rodape .container {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .rodape p {
