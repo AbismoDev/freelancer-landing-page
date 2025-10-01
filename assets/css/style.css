@@ -464,3 +464,82 @@
         width: 80%;
     }
 }
+
+@media (min-width: 1024px) {
+    :root {
+        /* Variaveis desktop */    
+        --tamanho--titulo: 24px;
+        --tamanho--titulo--card: 20px;
+        --tamanho--subtitulo: 18px;
+        --tamanho--texto: 16px;
+        --tamanho--texto--menu: 14px; 
+        --tamanho--texto--botao: 16px;
+    }
+
+    .container {
+        border: 1px solid red;
+    }
+
+    /* Seção Topo */
+    .logo {
+        width: 120px;
+    }
+
+    /* Seção Hero */
+    .container--texto--hero {
+        justify-content: center;
+    }
+
+    .container--texto--hero h1 {
+        font-size: 28px;
+    }
+
+    .container--hero {
+        min-height: 60vh;
+    }
+
+    /* Seção projetos */
+    .container--cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .card {    
+        flex-direction: row;
+        display: flex;
+        flex-grow: 0;
+        width: 90%;
+    }
+
+    .card--imagem--projetos,
+    .card--imagem--servicos {
+        border-bottom-left-radius: 4px;
+        border-top-right-radius: 0;
+        max-width: 300px;
+        height: auto;
+        width: 100%;
+    }
+
+    .card--descricao { 
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    /* Seção Sobre Mim */
+    .container--sobre--mim {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .sobre--mim--imagem {
+        border-radius: 0;
+        height: 600px;
+        width: 50%;
+    }
+
+    .sobre--mim--texto {
+        width: 60%;
+    }
+}
