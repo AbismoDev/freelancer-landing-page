@@ -476,10 +476,6 @@
         --tamanho--texto--botao: 16px;
     }
 
-    .container {
-        border: 1px solid red;
-    }
-
     /* Seção Topo */
     .logo {
         width: 120px;
