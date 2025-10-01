@@ -26,26 +26,6 @@
     --tamanho--texto: 10px;
     --tamanho--texto--menu: 11px;
     --tamanho--texto--botao: 11px;
-
-    /* Variaveis tablet */
-    /* 
-    --tamanho--titulo: 22px;
-    --tamanho--titulo--card: 16px;
-    --tamanho--subtitulo: 16px;
-    --tamanho--texto: 14px;
-    --tamanho--texto--menu: 12px; 
-    --tamanho--texto--botao: 13px;
-    */
-
-    /* Variaveis desktop */
-    /* 
-    --tamanho--titulo: 24px;
-    --tamanho--titulo--card: 20px;
-    --tamanho--subtitulo: 18px;
-    --tamanho--texto: 16px;
-    --tamanho--texto--menu: 14px; 
-    --tamanho--texto--botao: 16px;
-    */
 }
 
 * {
@@ -228,12 +208,11 @@
 .card {    
     border: 1px solid var(--cor--destaque--primaria);
     border-radius: 4px;
-    max-width: 400px;
     width: 100%;
 }
 
 .card--imagem--projetos {
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,6 +237,12 @@
 .card--descricao p {
     font-family: var(--fonte--texto--normal);
     font-size: var(--tamanho--texto);
+}
+
+.card--descricao--tags {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
 }
 
 /* Seção Serviços */
@@ -411,4 +396,71 @@
 
 .dev {
     font-weight: normal;
+}
+
+@media (min-width: 720px) {
+    :root {
+        /* Variaveis tablet */        
+        --tamanho--titulo: 22px;
+        --tamanho--titulo--card: 16px;
+        --tamanho--subtitulo: 16px;
+        --tamanho--texto: 14px;
+        --tamanho--texto--menu: 12px; 
+        --tamanho--texto--botao: 13px;       
+    }
+
+    /* Seção Topo */
+    .topo .container {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    /* Seção Hero */
+    .container--texto--hero {
+        align-items: flex-start;
+        text-align: left;
+        width: 50%;
+    }
+
+    .container--texto--hero h1 {
+        font-size: 18px;
+    }
+
+    .container--hero {
+        flex-direction: row !important;
+    }
+
+    .container--imagem--hero {
+        background-color: var(--cor--fundo--claro);
+        display: block;
+        width: 50%;
+    }
+
+    /* Seção projetos */
+    .container--cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {    
+        flex-direction: column;
+        display: flex;
+        flex-grow: 1;
+        width: 48%;
+    }
+
+    .card--descricao { 
+        justify-content: space-between;
+        display: flex;
+    }
+
+    /* Seção Sobre Mim */
+    .sobre--mim--texto {
+        width: 80%;
+    }
 }
